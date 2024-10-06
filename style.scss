@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.center-position {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.main {
+    height: 800px;
+    background-color: rgb(225, 255, 143);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &__cr-line {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+        padding: 27px 49px 27px 49px;
+    }
+}
+.main-content {
+    max-width: 768px;
+    height: 358px;
+    position: relative;
+    &__img-1 {
+        position: absolute;
+        left: 734px;
+        top: -333px;
+        width: 1047px;
+        height: 1130px;
+        background-image: url(img/group-star.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__img-2 {
+        width: 57px;
+        height: 57px;
+        position: absolute;
+        top: 94px;
+        left: -57px;
+        background-image: url(img/Star2.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__img-3 {
+        width: 37px;
+        height: 37px;
+        position: absolute;
+        top: 69px;
+        left: 36px;
+        background-image: url(img/Star\ 3.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &__img-4 {
+        background-image: url(img/Star\ 5.svg);
+        width: 37px;
+        height: 37px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 828px;
+        top: 538px;
+    }
+    &__img-5 {
+        background-image: url(img/Star\ 4.svg);
+        width: 83px;
+        height: 83px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        left: 893px;
+        top: 568px;
+
+    }
+    &__title {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-top: 196px;
+    }
+    &__text {
+        padding-top: 24px;
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+    }
+    &__button {
+        width: 274px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        padding: 16px 28px 16px 28px;
+        margin-top: 48px;
+    }
+    &__button:hover {
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 60px;
+        background: #ffffff;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+.about-game {
+    background: rgb(32, 32, 39);
+    height: 1450px;
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-top: 94px;
+    }
+    &__desc {
+        width: 788px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        margin-top: 24px;
+    }
+}
+.about-game__position {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    height: 1480px;
+    margin-top: 72px;
+}
+button {
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    width: 108px;
+    border: 0;
+}
+.game-column-1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    grid-column: span 4;
+    position: relative;
+    &__number {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+        padding: 8px 16px 10px 16px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+    &__title {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 16px;
+        margin-left: 32px;
+    }
+    &__link-1 {
+        text-decoration: none;
+    }
+    &__game-1 {
+        height: 473px;
+        background-color: #fff;
+        border-radius: 30px;
+        transition: .6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__img-1 {
+        height: 314px;
+        background-image: url(img/game-1.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+    &__link-4 {
+        text-decoration: none;
+    }
+    &__game-4 {
+        height: 551px;
+        background-color: #fff;
+        border-radius: 30px;
+        transition: .6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__img-4 {
+        height: 314px;
+        background-image: url(img/game-4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+    &__star-1 {
+        position: absolute;
+        left: -90px;
+        top: 406px;
+    }
+    &__star-2 {
+        position: absolute;
+        top: 458px;
+        left: -75px;
+    }
+}
+.game-column-2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    grid-column: span 4;
+    &__number {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+        padding: 8px 16px 10px 16px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+    &__title {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 16px;
+        margin-left: 32px;
+    }
+    &__link-2 {
+        text-decoration: none;
+    }
+    &__game-2 {
+        height: 512px;
+        background-color: #fff;
+        border-radius: 30px;
+        transition: .6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__img-2 {
+        height: 314px;
+        background-image: url(img/game-2.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+    &__link-5 {
+        text-decoration: none;
+    }
+    &__game-5 {
+        height: 512px;
+        background-color: #fff;
+        border-radius: 30px;
+        transition: .6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__img-5 {
+        height: 314px;
+        background-image: url(img/game-5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+}
+.game-column-3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    grid-column: span 4;
+    position: relative;
+    z-index: 1;
+    &__number {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+        padding: 8px 16px 8px 16px;
+        margin-top: 32px;
+        margin-left: 32px;
+    }
+    &__title {
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 16px;
+        margin-left: 32px;
+    }
+    &__link-3 {
+        text-decoration: none;
+    }
+    &__game-3 {
+        height: 473px;
+        background-color: #fff;
+        border-radius: 30px;
+        transition: .6s;
+        z-index: 1;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__img-3 {
+        height: 314px;
+        background-image: url(img/game-3.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+    &__link-6 {
+        text-decoration: none;
+    }
+    &__game-6 {
+        height: 551px;
+        background-color: #fff;
+        border-radius: 30px;
+        transition: .6s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__img-6 {
+        height: 314px;
+        background-image: url(img/game-6.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+    &__star {
+        position: absolute;
+        top: -250px;
+        left: 50px;
+        z-index: -1;
+    }
+}
