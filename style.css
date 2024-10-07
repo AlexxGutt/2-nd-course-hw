@@ -21,6 +21,7 @@
   position: relative;
 }
 .main__cr-line {
+  display: none;
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -138,6 +139,9 @@
   text-align: center;
   cursor: pointer;
 }
+.main-content__link {
+  text-decoration: none;
+}
 
 .about-game {
   background: rgb(32, 32, 39);
@@ -168,15 +172,16 @@
   grid-template-columns: repeat(12, 1fr);
   -moz-column-gap: 32px;
        column-gap: 32px;
-  height: 1480px;
   margin-top: 72px;
 }
 
-button {
+.style {
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
   width: 108px;
   border: 0;
+  padding: 8px 16px 10px 16px;
+  margin-top: 32px;
 }
 
 .game-column-1 {
@@ -193,9 +198,9 @@ button {
   font-weight: 500;
   line-height: 110%;
   text-align: left;
-  padding: 8px 16px 10px 16px;
   margin-top: 32px;
   margin-left: 32px;
+  width: 76px;
 }
 .game-column-1__title {
   color: rgb(32, 32, 39);
@@ -275,6 +280,7 @@ button {
   padding: 8px 16px 10px 16px;
   margin-top: 32px;
   margin-left: 32px;
+  width: 76px;
 }
 .game-column-2__title {
   color: rgb(32, 32, 39);
@@ -286,6 +292,7 @@ button {
   text-align: left;
   margin-top: 16px;
   margin-left: 32px;
+  max-width: 314px;
 }
 .game-column-2__link-2 {
   text-decoration: none;
@@ -346,6 +353,7 @@ button {
   padding: 8px 16px 8px 16px;
   margin-top: 32px;
   margin-left: 32px;
+  width: 76px;
 }
 .game-column-3__title {
   color: rgb(32, 32, 39);
@@ -404,4 +412,18 @@ button {
   top: -250px;
   left: 50px;
   z-index: -1;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+}
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 61px;
 }/*# sourceMappingURL=style.css.map */
