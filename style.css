@@ -415,6 +415,20 @@
   z-index: -1;
 }
 
+.m-game {
+  background: rgb(32, 32, 39);
+  height: 3500px;
+}
+.m-game__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  text-align: left;
+  padding-top: 96px;
+}
+
 .footer {
   background-color: rgb(189, 237, 53);
   height: 150px;
