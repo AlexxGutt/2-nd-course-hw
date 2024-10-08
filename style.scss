@@ -11,6 +11,7 @@
     padding-right: calc(50% - 600px);
 }
 .main {
+    overflow-x: hidden;
     height: 800px;
     background-color: rgb(225, 255, 143);
     background-size: cover;
@@ -133,9 +134,13 @@
         text-align: center;
         cursor: pointer;
     }
+    &__link {
+        text-decoration: none;
+    }
 
 }
 .about-game {
+    overflow-x: hidden;
     background: rgb(32, 32, 39);
     height: 1450px;
     &__title {
@@ -162,14 +167,15 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
-    height: 1480px;
     margin-top: 72px;
 }
-button {
+.style {
     border-radius: 52.58px;
     background: rgb(247, 247, 247);
     width: 108px;
     border: 0;
+    padding: 8px 16px 10px 16px;
+    margin-top: 32px;
 }
 .game-column-1 {
     display: flex;
@@ -184,9 +190,9 @@ button {
         font-weight: 500;
         line-height: 110%;
         text-align: left;
-        padding: 8px 16px 10px 16px;
         margin-top: 32px;
         margin-left: 32px;
+        width: 76px;
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -265,6 +271,7 @@ button {
         padding: 8px 16px 10px 16px;
         margin-top: 32px;
         margin-left: 32px;
+        width: 76px;
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -276,6 +283,7 @@ button {
         text-align: left;
         margin-top: 16px;
         margin-left: 32px;
+        max-width: 314px;
     }
     &__link-2 {
         text-decoration: none;
@@ -335,6 +343,7 @@ button {
         padding: 8px 16px 8px 16px;
         margin-top: 32px;
         margin-left: 32px;
+        width: 76px;
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -393,5 +402,18 @@ button {
         top: -250px;
         left: 50px;
         z-index: -1;
+    }
+}
+.footer {
+    background-color: rgb(189, 237, 53);
+    height: 150px;
+    &__text {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 61px;
     }
 }
