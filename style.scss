@@ -11,14 +11,13 @@
     padding-right: calc(50% - 600px);
 }
 .main {
+    overflow-x: hidden;
     height: 800px;
     background-color: rgb(225, 255, 143);
     background-size: cover;
     background-position: center;
     position: relative;
-    // Бегущая строка (убрал пока не применен Java Script)
     &__cr-line {
-        display: none;
         position: absolute;
         left: 0px;
         bottom: 0px;
@@ -141,6 +140,7 @@
 
 }
 .about-game {
+    overflow-x: hidden;
     background: rgb(32, 32, 39);
     height: 1450px;
     &__title {
