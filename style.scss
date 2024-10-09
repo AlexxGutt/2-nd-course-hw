@@ -27,6 +27,9 @@
         background: rgb(188, 236, 48);
         padding: 27px 49px 27px 49px;
     }
+    &__cr-line-mob {
+        display: none;
+    }
 }
 .main-content {
     max-width: 768px;
@@ -87,6 +90,9 @@
         left: 893px;
         top: 568px;
 
+    }
+    &__img-6 {
+        display: none;
     }
     &__title {
         color: rgb(32, 32, 39);
@@ -599,3 +605,4 @@ button {
         padding-top: 61px;
     }
 }
+@import 'mobile';
