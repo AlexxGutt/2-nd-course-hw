@@ -108,11 +108,19 @@
     .game-1 {
         justify-content: flex-end;
         flex-direction: column;
-        grid-column: span 4;
+        height: 528px;
         &__img {
-            max-width: 393px;
-            height: 284px;
-        }
+            display: none;
+         }
+        &__img-m {
+            display: block;
+            background-image: url(img/game-1.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50px;
+            height: 285px;
+        } 
     }
     .game-info {
         display: flex;
@@ -136,7 +144,6 @@
             text-align: left;
         }
         &__text {
-            width: 285px;
             color: rgb(255, 255, 255);
             font-family: Montserrat;
             font-size: 16px;
@@ -145,6 +152,14 @@
             text-align: center;
         }
 
+    }
+    button {
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        border: 1px solid rgb(0, 0, 0);
+        padding: 16px 28px 16px 28px;
+        border: 0;
+        margin-top: 36px;
     }
    
 }

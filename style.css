@@ -460,6 +460,9 @@
   background-repeat: no-repeat;
   border-radius: 50px;
 }
+.game-1__img-m {
+  display: none;
+}
 .game-1__star-1 {
   position: absolute;
   top: -98px;
@@ -735,11 +738,19 @@ button:hover {
   .game-1 {
     justify-content: flex-end;
     flex-direction: column;
-    grid-column: span 4;
+    height: 528px;
   }
   .game-1__img {
-    max-width: 393px;
-    height: 284px;
+    display: none;
+  }
+  .game-1__img-m {
+    display: block;
+    background-image: url(img/game-1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    height: 285px;
   }
   .game-info {
     display: flex;
@@ -764,12 +775,19 @@ button:hover {
     text-align: left;
   }
   .game-info__text {
-    width: 285px;
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 600;
     line-height: 141.69%;
     text-align: center;
+  }
+  button {
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 16px 28px 16px 28px;
+    border: 0;
+    margin-top: 36px;
   }
 }/*# sourceMappingURL=style.css.map */

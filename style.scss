@@ -446,6 +446,9 @@
         background-repeat: no-repeat;
         border-radius: 50px;
     }
+    &__img-m {
+        display: none;
+    }
     &__star-1 {
         position: absolute;
         top: -98px;
