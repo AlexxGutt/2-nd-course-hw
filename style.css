@@ -655,7 +655,7 @@ button:hover {
     align-items: center;
   }
   .main-content__title {
-    max-width: 262px;
+    width: 262px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
     font-size: 40px;
@@ -665,7 +665,7 @@ button:hover {
     padding-top: 147px;
   }
   .main-content__text {
-    max-width: 296px;
+    width: 296px;
     color: rgb(32, 32, 39);
     font-family: Montserrat;
     font-size: 16px;
@@ -699,10 +699,16 @@ button:hover {
     left: 91px;
   }
   .main-content__img-4 {
-    display: none;
+    width: 18px;
+    height: 18px;
+    top: 566px;
+    left: 272px;
   }
   .main-content__img-5 {
-    display: none;
+    height: 42px;
+    width: 39px;
+    top: 600px;
+    left: 322px;
   }
   .main-content__img-6 {
     display: block;
