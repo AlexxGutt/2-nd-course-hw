@@ -90,4 +90,36 @@
     .about-game {
         display: none;
     }
+    .m-game {
+        &__title {
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 49px;
+            text-align: left;
+            padding-top: 48px;
+        }
+    }
+    .game-block {
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 0px;
+    }
+    .game-1 {
+        flex-direction: column;
+        grid-column: span 4;
+    }
+    .game-info {
+        padding: 29px 29px 32px 29px;
+        &__title {
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            text-align: left;
+        }
+        }
+
+    
 }
