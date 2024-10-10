@@ -733,10 +733,18 @@ button:hover {
     margin-top: 0px;
   }
   .game-1 {
+    justify-content: flex-end;
     flex-direction: column;
     grid-column: span 4;
   }
+  .game-1__img {
+    max-width: 393px;
+    height: 284px;
+  }
   .game-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 29px 29px 32px 29px;
   }
   .game-info__title {
@@ -746,5 +754,22 @@ button:hover {
     font-weight: 700;
     line-height: 39px;
     text-align: left;
+  }
+  .game-info__desc {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+  .game-info__text {
+    width: 285px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
