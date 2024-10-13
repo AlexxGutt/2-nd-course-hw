@@ -45,7 +45,7 @@ num--;
 alert(num);
 
 // Task - 8
-let age = prompt(`Сколько Вам лет?`);
+let age = prompt(`Сколько Вам лет??`);
 alert(age);
 
 // Task - 9
