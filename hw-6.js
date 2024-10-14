@@ -85,4 +85,16 @@ if (number % 2 === 0) {
     console.log(`Не четное`);
 }
 
+// Task - 7
+let ios = 0;
+let android = 1;
+let clientOS = String(prompt(`у Вас Android или iOS?`));
+clientOS = clientOS.toLocaleLowerCase();
+if (clientOS === `ios`) {
+    console.log(`Установите версию приложения для iOS по ссылке`);
+} else if (clientOS === `android`) {
+    console.log(`Установите версию приложения для Android по ссылке`);
+} else {
+    console.log(`У нас нет такой системы!`)
+}
 
