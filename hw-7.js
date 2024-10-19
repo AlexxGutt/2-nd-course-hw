@@ -22,5 +22,23 @@ const obj = {
 }
 
 for (const key in obj) {
-    console.log(`${key} - ${obj[key]}`);
+    console.log(`${key} - ${obj[key]} доллларов`);
+}
+
+// Task - 5
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+    n /= 2;
+    console.log(n);
+    num++;
+}
+console.log(`Количество итераций ${num}`);
+
+// Task - 6
+let dayFriday = 5;
+let mounth = 31;
+
+for (let c = dayFriday; c <= mounth; c += 7) {
+    console.log(`Сегодня пятница, ${c}-е число. Необходимо подготовить отчет.`);
 }
