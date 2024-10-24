@@ -8,12 +8,12 @@ function guessTheNumber() {
         alert(`Поздравляю! Вы угадали!`);
         } else if (isNaN(num) || num > 100 || num < 1) {
             alert(`Введите число от 1 до 100!`);
-            alert(guessTheNumber());
+            return (guessTheNumber());
         } else if (num > randomNum) {
             alert(`Введите число меньше ${num}`);
-            alert(guessTheNumber());
+            return (guessTheNumber());
         } else if (num < randomNum) {
             alert(`Введите число больше ${num}`);
-            alert(guessTheNumber());
-    } 
+            return (guessTheNumber());
+        }
 };
