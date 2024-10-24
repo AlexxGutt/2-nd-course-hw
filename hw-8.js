@@ -15,4 +15,11 @@ function evenNumber(c) {
 console.log(evenNumber(c));
 
 // Задание - 3
+let d = Number(prompt(`введите число`));
+function squareNumber(d) {
+    return d ** 2;
+};
+console.log(squareNumber(d));
+d = squareNumber(d);
 
+// Задание - 4
