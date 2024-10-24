@@ -5,12 +5,12 @@ console.log(minSearch(4, 8));
 // Задание - 2
 let c = Number(prompt(`Введите число`));
 function evenNumber(c) {
-            if (c % 2 === 0) {
-            return (`число четное`);
-        }
-        else {
-            return (`число нечетное`);
-        }
+        if (c % 2 === 0) {
+        return (`число четное`);
+    }
+    else {
+        return (`число нечетное`);
+    }
 };
 console.log(evenNumber(c));
 
@@ -23,3 +23,16 @@ console.log(squareNumber(d));
 d = squareNumber(d);
 
 // Задание - 4
+let userAge = Number(prompt(`Сколько Вам лет?`));
+function userGreeting(userAge) {
+        if (userAge >= 0 && userAge <= 12) {
+            return (`Привет, друг!`);
+        } else if (userAge >= 13) {
+            return (`Добро пожаловать!`);
+        } else {
+            return (`Вы ввели неправильное значение!`);
+        }
+};
+alert(userGreeting(userAge));
+
+// Задание  - 5
