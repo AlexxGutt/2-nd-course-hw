@@ -36,3 +36,16 @@ function userGreeting(userAge) {
 alert(userGreeting(userAge));
 
 // Задание  - 5
+let e = Number(prompt(`Введите первое число`));
+let f = Number(prompt(`Введите второе число`));
+
+function correctNumbers(e, f) {
+        if (isNaN(e) || isNaN(f)) {
+            return (`Одно или оба значения не являются числом`);
+        } else {
+            return e * f;
+        }
+}; 
+console.log(correctNumbers(e, f));
+
+// Задание - 6
