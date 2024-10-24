@@ -49,3 +49,39 @@ function correctNumbers(e, f) {
 console.log(correctNumbers(e, f));
 
 // Задание - 6
+let userNumberCub = Number(prompt(`Введите число`));
+
+function cubedNumber (userNumberCub) {
+        if (isNaN(userNumberCub)) {
+            return (`Переданный параметр не является числом`);
+        } else {
+            return (userNumberCub ** 3);
+        }
+};
+console.log(cubedNumber(userNumberCub));
+
+// Задание - 7
+function getCircleArea() {
+    return this.radius ** 2 * 3.14;  
+}
+
+function getCirclePerimeter() {
+    return this.radius * 3.14 * 2;
+}
+
+const circle1 = {
+    radius: 15,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+};
+
+const circle2 = {
+    radius: 5,
+    getArea: getCircleArea,
+    getPerimeter: getCirclePerimeter,
+};
+
+console.log(circle1.getArea());
+console.log(circle1.getPerimeter());
+console.log(circle2.getArea());
+console.log(circle2.getPerimeter());
