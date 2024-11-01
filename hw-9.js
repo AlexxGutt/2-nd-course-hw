@@ -10,8 +10,8 @@ const newArr = [1, 5, 4, 10, 0, 3];
 
 // Task - 2 
 
-const twoArr = [1, 5, 4, 10, 0, 3]
-twoArr.forEach((el, index) => {
+const secondArr = [1, 5, 4, 10, 0, 3]
+secondArr.forEach((el, index) => {
     if (el === 4) {
         console.log(index);
     }
@@ -19,4 +19,18 @@ twoArr.forEach((el, index) => {
 
 // Task - 3
 
+const thirdArr = [1, 3, 5, 10, 20]
+let joinedNew = thirdArr.join(` `)
+console.log(joinedNew);
 
+// Task - 4
+
+const oneArr = [];
+for (let a = 0; a < 3; a++) {
+    const twoArr = [];
+    for (let a = 0; a < 3; a++) {
+        twoArr.push(1);
+    }
+    oneArr.push(twoArr);
+};
+console.log(oneArr);
