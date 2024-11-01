@@ -67,3 +67,13 @@ console.log(text);
 
 // Task - 9
 
+const seventhArr = [[1, 2, 3],[4, 5, 6]];
+const spreadArr = [];
+
+for (let b = 0; b < seventhArr.length; b++) {
+    spreadArr.push(...seventhArr[b]);
+}
+console.log(spreadArr);
+
+// Task - 10
+
