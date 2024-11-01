@@ -76,4 +76,12 @@ for (let b = 0; b < seventhArr.length; b++) {
 console.log(spreadArr);
 
 // Task - 10
+const eighthArr = [2, 5, 1, 3, 4, 6, 8, 9, 7, 10];
 
+for (let c = 0; c < eighthArr.length; c++) {
+    if (eighthArr[c + 1]) {
+        console.log(eighthArr[c] + eighthArr[c + 1]);
+    }
+};
+
+// Task - 11
