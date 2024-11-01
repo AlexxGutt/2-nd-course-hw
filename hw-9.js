@@ -61,3 +61,9 @@ if (sixthArr.includes(userNumber)) {
 
 // Task - 8
 
+let text = `abcdef`;
+text = text.split(``).reverse().join(``);
+console.log(text);
+
+// Task - 9
+
