@@ -20,7 +20,7 @@ const mathOperations = [operationSum, operationSub, operationMult, operationDiv]
 
 function randomTasks() {
 
-    let task = Number(prompt(`Сколько будет: ${firstNumber} ${mathSign[i]} ${secondNumber}?`));
+    let task = Number(prompt(`Чему равно выражение: ${firstNumber} ${mathSign[i]} ${secondNumber}?`));
 
     if (task === mathOperations[i]) {
         alert(`Ура, ${task} - это правильный ответ!`);
