@@ -20,3 +20,7 @@ console.log(Math.min(52, 53, 49, 77, 21, 32));
 
 // Task - 5
 
+const randomNum = Math.floor(Math.random() * 10) + 1;
+console.log(randomNum);
+
+// Task - 6
