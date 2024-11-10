@@ -26,21 +26,16 @@ console.log(randomNumb);
 // Task - 6
 
 let integer = Math.floor(Math.random() * 15) + 1;
-console.log(integer);
 let lengthArray = Math.round(integer / 2);
-console.log(lengthArray);
 let newArr = [];
-newArr.push(Math.floor(Math.random() * integer));
-newArr.push(Math.floor(Math.random() * integer));
-newArr.push(Math.floor(Math.random() * integer));
-newArr.push(Math.floor(Math.random() * integer));
 
-// function wholeNumber() {
-//     for (let i = 0; i <= lengthArray; i++) {
-//         newArr.push(Math.floor(Math.random() * integer));
-//     }
-// }
-console.log(newArr);
-for (let i = 0; i < 10; i++) {
-    console.log(i);;
+console.log(integer); //для проверки - целое число
+console.log(lengthArray); //для проверки - длина массива 
+
+for (let i = 0; i < lengthArray; i++) {
+    newArr.push(Math.floor(Math.random() * integer));
 }
+
+console.log(newArr);
+
+// Task - 7
