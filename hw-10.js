@@ -5,7 +5,17 @@ console.log(a.toUpperCase());
 
 // Task - 2
 
+function filterWords(strArr, str) {
+    let resArray = [];
+    for (i = 0; i < strArr.length; i++) {
+        if (strArr[i].toLowerCase().startsWith(str.toLowerCase())) {
+            resArray.push(strArr[i]);
+        }
+    }
+    return resArray;
+};
 
+console.log(filterWords([`Комод`, `Кран`, `Кедр`, `Косынка`, `Кокос`], `ко`));
 
 // Task - 3
 
@@ -48,3 +58,14 @@ function wholeNumber(newArr) {
 console.log(wholeNumber([]));
 
 // Task - 7
+
+let b = Math.floor(Math.random() * 100);
+let c = Math.floor(Math.random() * 10);
+
+console.log(b);
+console.log(c);
+
+function rangeNumber() {
+    return Math.round(Math.random() * b) + c;
+}
+console.log(rangeNumber());
