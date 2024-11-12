@@ -69,3 +69,6 @@ function rangeNumber() {
     return Math.round(Math.random() * b) + c;
 }
 console.log(rangeNumber());
+
+// Task - 8
+
