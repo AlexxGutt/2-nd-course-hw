@@ -72,3 +72,36 @@ console.log(rangeNumber());
 
 // Task - 8
 
+console.log(new Date());
+
+// Task - 9
+
+const currentDate = new Date();
+
+currentDate.setDate(currentDate.getDate() + 73);
+
+console.log(currentDate);
+
+// Task - 10
+ const nowDate = new Date();
+function showDate(nowDate) {
+    const days = [`Воскресенье`, `Понедельник`, `Вторник`, `Среда`, `Четверг`, `Пятница`, `Суббота`];
+    const months = [`Январь`, `Февраль`, `Март`, `Апрель`, `Май`, `Июнь`, `Июль`, `Август`, `Сентябрь`, `Октябрь`, `Ноябрь`, `Декабрь`];
+    
+    const day = nowDate.getDate();
+    const month = nowDate.getMonth();
+    const year = nowDate.getFullYear();
+    const daysOfTheWeek = days[nowDate.getDay()];
+    const hours = nowDate.getHours();
+    const minutes = nowDate.getMinutes();
+    const seconds = nowDate.getSeconds();
+
+    return `
+    Дата: ${day} ${months[month]} ${year} - это ${daysOfTheWeek};
+    Время: ${hours}:${minutes}:${seconds};
+    `
+    // Дата: [число] [месяц на русском] [год] — это [день недели на русском].
+    // Время: [часы]:[минуты]:[секунды]
+};
+
+console.log(showDate(nowDate));
