@@ -55,7 +55,7 @@ function wholeNumber(newArr) {
     return newArr;
 };
 
-console.log(wholeNumber([]));
+console.log(wholeNumber(newArr));
 
 // Task - 7
 
