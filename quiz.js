@@ -15,3 +15,11 @@ const quiz = [
         correctAnswer: 2
     }
 ];
+
+console.log(quiz.length);
+function startQuiz() {
+    for (let i = 0; i < quiz.length; i++) {
+       let userAnswer = Number(prompt(`Напишите вариант ответа на вопрос: \n${quiz[i].question}\n\nВариант ответа: \n${quiz[i].options.join('\n')}`))
+    }
+}
+console.log(startQuiz());
