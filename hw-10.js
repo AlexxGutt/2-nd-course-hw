@@ -100,8 +100,6 @@ function showDate(nowDate) {
     Дата: ${day} ${months[month]} ${year} - это ${daysOfTheWeek};
     Время: ${hours}:${minutes}:${seconds};
     `
-    // Дата: [число] [месяц на русском] [год] — это [день недели на русском].
-    // Время: [часы]:[минуты]:[секунды]
 };
 
 console.log(showDate(nowDate));
