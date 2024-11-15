@@ -2,7 +2,7 @@ const quiz = [
     {
         question: "Какой цвет небо?",
         options: ["1. Красный", "2. Синий", "3. Зеленый"],
-        correctAnswer: 2 // номер правильного ответа
+        correctAnswer: 2
     },
     {
         question: "Сколько дней в неделе?",
@@ -16,10 +16,23 @@ const quiz = [
     }
 ];
 
+let userAnswer = 0;
+let rightAnswer = 0;
+let result;
+
 console.log(quiz.length);
 function startQuiz() {
+
     for (let i = 0; i < quiz.length; i++) {
-       let userAnswer = Number(prompt(`Напишите вариант ответа на вопрос: \n${quiz[i].question}\n\nВариант ответа: \n${quiz[i].options.join('\n')}`))
+       userAnswer = Number(prompt(`Напишите вариант ответа на вопрос: \n${quiz[i].question}\n\nВариант ответа: \n${quiz[i].options.join('\n')}`))
+        if (userAnswer === quiz[i].correctAnswer) {
+            rightAnswer++
+        }
+        if (rightAnswer > 1) {
+            result = `вопроса`
+        } else {
+            result = `вопрос`
+        }
     }
-}
-console.log(startQuiz());
+    return alert(`Викторина окончена!\nВы ответили правильно на ${rightAnswer} ${result}!`);
+};
