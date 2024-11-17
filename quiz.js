@@ -23,7 +23,7 @@ function startQuiz() {
     let result;
 
     for (let i = 0; i < quiz.length; i++) {
-       userAnswer = Number(prompt(`Напишите номер варианта ответа на вопрос: \n${quiz[i].question}\n\nВариант ответа: \n${quiz[i].options.join('\n')}`))
+       userAnswer = Number(prompt(`Введите номер варианта ответа на вопрос: \n${quiz[i].question}\n\nВариант ответа: \n${quiz[i].options.join('\n')}`))
         if (userAnswer === quiz[i].correctAnswer) {
             rightAnswer++
         }
