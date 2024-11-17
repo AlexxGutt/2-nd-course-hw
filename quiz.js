@@ -16,12 +16,11 @@ const quiz = [
     }
 ];
 
-let userAnswer = 0;
-let rightAnswer = 0;
-let result;
-
-console.log(quiz.length);
 function startQuiz() {
+    
+    let userAnswer = 0;
+    let rightAnswer = 0;
+    let result;
 
     for (let i = 0; i < quiz.length; i++) {
        userAnswer = Number(prompt(`Напишите номер варианта ответа на вопрос: \n${quiz[i].question}\n\nВариант ответа: \n${quiz[i].options.join('\n')}`))
