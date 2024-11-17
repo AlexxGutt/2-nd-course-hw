@@ -19,6 +19,5 @@ function startRockPaperScissors() {
         alert(`Вы выиграги!!!\nВаш выбор - ${userResult}\nКомпьтер выбрал - ${computerResult}`)
     } else {
         alert(`Вы проиграли...\nВаш выбор - ${userResult}\nКомпьтер выбрал - ${computerResult}`)
-    }
-
+    }  
 };
