@@ -41,3 +41,41 @@ const people = [
 
 // Task - 3
 
+const timer = () => {
+    const id = setInterval(() => {
+        console.log(new Date());
+    }, 3000);
+
+    setTimeout(() => {
+        clearInterval(id);
+        console.log(`30 секунд прошло!`);
+    }, 30000);
+};
+console.log(timer());
+
+// Task - 4
+
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+};
+
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
+
+// Task - 5
+
+function forSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
+}
+
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+forSecond(() => sayHi('Глеб'));
+
+
