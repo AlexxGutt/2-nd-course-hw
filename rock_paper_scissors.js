@@ -9,7 +9,7 @@ function startRockPaperScissors() {
     const rules = {
         камень: "ножницы",
         ножницы: "бумага",
-        ножницы: "бумага",
+        бумага: "камень",
     };
 
     if (computerResult === userResult) {
