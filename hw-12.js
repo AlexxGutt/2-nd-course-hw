@@ -1,15 +1,85 @@
 // task - 1
-const textEl = document.querySelector('.text');
 const buttonEl = document.querySelector('.btn');
-
 buttonEl.addEventListener('click', () => {
-    textEl.textContent = ``;
-    buttonEl.textContent = 'Показать текст';
+    const textEl = document.querySelector('.text');
 
+    textEl.style.display = 'none';
+    buttonEl.textContent = 'Показать текст';
+    
     buttonEl.addEventListener('click', () => {
-        textEl.textContent = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, rem?`;
+        textEl.style.display = 'block';
         buttonEl.textContent = 'Скрыть текст';
     });
 });
 
+// Task - 2
+const buttonColorEl = document.querySelector('.btn-color');
+buttonColorEl.addEventListener('click', () => {
+    const paragraphEl = document.querySelector('.change-color');
 
+    paragraphEl.style.color = '#007bff';
+    buttonColorEl.textContent = 'Цвет по умолчанию';
+    
+    buttonColorEl.addEventListener('click', () => {
+        paragraphEl.style.color = 'black';
+        buttonColorEl.textContent = 'Сменить цвет';
+    });
+});
+
+// Task - 3
+const buttonTextEl = document.querySelector('.btn-h1');
+buttonTextEl.addEventListener('click', () => {
+    const headingEl = document.querySelector('.change-text');
+
+    headingEl.textContent = '«Привет, мир!»';
+});
+
+// Task - 4
+const buttonAllEl = document.querySelector('.change-all-text');
+buttonAllEl.addEventListener('click', () => {
+    const elementText = document.querySelectorAll('.description');
+
+    elementText.forEach(description => {
+        description.textContent = '«Измененный текст»';
+        description.style.color ='red';
+        description.style.backgroundColor = 'white';
+        buttonAllEl.textContent = 'Сбросить текст';
+     });
+});
+
+// Task - 5
+const buttonAllChangeEl = document.querySelector('.change-all');
+buttonAllChangeEl.addEventListener('click', () => {
+    const elementTextAll = document.querySelectorAll('.descriptions');
+
+    elementTextAll.forEach(descriptions => {
+        descriptions.textContent = '«Новый текст»';
+        descriptions.style.color ='red';
+        descriptions.style.backgroundColor = 'white';
+        buttonAllChangeEl.textContent = 'Сбросить текст';
+     });
+});
+
+// Task - 6
+const btnNewTaext = document.querySelector('.new-text');
+btnNewTaext.addEventListener('click', () => {
+    const newDiv = document.createElement('div');
+    newDiv.textContent = '«Новый абзац»';
+    document.body.appendChild(newDiv);
+    newDiv.style.color ='red';
+    newDiv.style.backgroundColor = 'gainsboro';
+    newDiv.style.fontSize = '20px';
+    newDiv.style.marginTop = '20px';
+    newDiv.style.marginBottom = '50px';
+    newDiv.style.width = '450px';
+});
+
+// Task - 7
+const btnDelText = document.querySelector('.delete-first');
+btnDelText.addEventListener('click', () => {
+    const otherDescText = document.querySelector('.description_2');
+    const newDescText = document.querySelectorAll('.description_1');
+    newDescText.forEach(description_1 => {
+        newDescText[0].remove();
+    });
+});
