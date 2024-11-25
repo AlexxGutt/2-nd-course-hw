@@ -2,14 +2,13 @@
 const buttonEl = document.querySelector('.btn');
 buttonEl.addEventListener('click', () => {
     const textEl = document.querySelector('.text');
-
-    textEl.style.display = 'none';
-    buttonEl.textContent = 'Показать текст';
-    
-    buttonEl.addEventListener('click', () => {
+    if (buttonEl.textContent === 'Скрыть текст') {
+        textEl.style.display = 'none';
+        buttonEl.textContent = 'Показать текст';
+    } else {
         textEl.style.display = 'block';
         buttonEl.textContent = 'Скрыть текст';
-    });
+    };
 });
 
 // Task - 2
@@ -17,13 +16,13 @@ const buttonColorEl = document.querySelector('.btn-color');
 buttonColorEl.addEventListener('click', () => {
     const paragraphEl = document.querySelector('.change-color');
 
-    paragraphEl.style.color = '#007bff';
-    buttonColorEl.textContent = 'Цвет по умолчанию';
-    
-    buttonColorEl.addEventListener('click', () => {
+    if (buttonColorEl.textContent === 'Сменить цвет') {
+        paragraphEl.style.color = '#007bff';
+        buttonColorEl.textContent = 'Цвет по умолчанию';
+    } else {
         paragraphEl.style.color = 'black';
         buttonColorEl.textContent = 'Сменить цвет';
-    });
+    };
 });
 
 // Task - 3
@@ -79,7 +78,7 @@ const btnDelText = document.querySelector('.delete-first');
 btnDelText.addEventListener('click', () => {
     const otherDescText = document.querySelector('.description_2');
     const newDescText = document.querySelectorAll('.description_1');
-    newDescText.forEach(description_1 => {
-        newDescText[0].remove();
-    });
+
+    newDescText[0].remove();
+
 });
