@@ -77,8 +77,7 @@ btnNewTaext.addEventListener('click', () => {
 const btnDelText = document.querySelector('.delete-first');
 btnDelText.addEventListener('click', () => {
     const otherDescText = document.querySelector('.description_2');
-    const newDescText = document.querySelectorAll('.description_1');
+    const newDescText = document.querySelector('.description_1');
 
-    newDescText[0].remove();
-
+    newDescText.remove();
 });
