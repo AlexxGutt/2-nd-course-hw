@@ -595,7 +595,7 @@
   text-align: center;
 }
 
-.btn {
+button {
   width: 247px;
   border-radius: 60px;
   background-color: rgb(32, 32, 39);
@@ -604,7 +604,7 @@
   border: 0;
   margin-top: 36px;
 }
-.btn:hover {
+button:hover {
   color: rgb(32, 32, 39);
   text-align: center;
   box-sizing: border-box;
