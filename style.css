@@ -595,16 +595,16 @@
   text-align: center;
 }
 
-button {
+.btn {
   width: 247px;
   border-radius: 60px;
-  background: rgb(32, 32, 39);
+  background-color: rgb(32, 32, 39);
   border: 1px solid rgb(0, 0, 0);
   padding: 16px 28px 16px 28px;
   border: 0;
   margin-top: 36px;
 }
-button:hover {
+.btn:hover {
   color: rgb(32, 32, 39);
   text-align: center;
   box-sizing: border-box;
