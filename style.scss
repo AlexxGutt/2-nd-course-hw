@@ -605,31 +605,20 @@ button {
         padding-top: 61px;
     }
 }
-.running-bg {
+.moving-image {
+    background-image: url(img/marquee.png);
     width: 100%;
     height: 90px;
-    overflow: hidden;
-    position: relative;
+    animation: moveLeft 5s linear infinite;
 }
   
-.running-bg img {
-    display: block;
-    width: 3220px;
-    height: 90px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: running-bg 20s linear infinite;
-}
-  
-.running-bg img:nth-child(2) {
-    left: 100%;
-}
-  
-@keyframes running-bg {
+@keyframes moveLeft {
+    from {
+      left: 0;
+    }
     to {
-      transform: translateX(-100%);
+      left: -200px;
     }
 }
+  
 @import 'mobile';
