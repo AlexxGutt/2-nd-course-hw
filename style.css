@@ -627,19 +627,23 @@ button:hover {
   padding-top: 61px;
 }
 
-.moving-image {
-  background-image: url(img/marquee.png);
-  width: 100%;
+.container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
   height: 90px;
-  animation: moveLeft 5s linear infinite;
+  background-image: url(img/marquee.png);
+  background-repeat: repeat-x;
+  animation: moveLeft 16s infinite linear;
 }
 
 @keyframes moveLeft {
   from {
-    left: 0;
+    background-position: 0px;
   }
   to {
-    left: -200px;
+    background-position: -3220px;
   }
 }
 @media (min-width: 320px) and (max-width: 425px) {
