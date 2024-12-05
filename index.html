@@ -9,13 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body">
-    <script src="random_tasks.js"></script>
-    <script src="guess_the_number.js"></script>
-    <script src="tur_the_text_over.js"></script>
-    <script src="quiz.js"></script>
-    <script src="rock_paper_scissors.js"></script>
-
+<body>
     <div class="main center">
         <div class="main-content">
             <div class="main-content__img-1"></div>
@@ -64,7 +58,6 @@
         </div>
         <div class="container"></div>
     </div>
-
     <div class="about-game center">
         <h1 class="about-game__title" id="game-title">Об играх</h1>
         <p class="about-game__desc">В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.
@@ -146,7 +139,7 @@
                 <div class="game-info">
                     <h2 class="game-info__title">Угадай число</h2>
                     <p class="game-info__desc">Попробуй угадать случайное число от 1 до 100.</p>
-                    <button onclick="guessTheNumber()" class="game-info__text">Играть!</button>
+                    <button id="btn" class="game-info__text">Играть!</button>
                 </div>
                 <div class="game-1__star-1">
                     <svg width="34.876953" height="34.877197" viewBox="0 0 34.877 34.8772" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -178,7 +171,7 @@
                     <button onclick="reverseText()" class="game-info__text">Играть!</button>
                 </div>
             </div>
-            <div class="game-4" id="Quiz">
+            <div class="game-4" id="Rock-paper-scissors">
                 <div class="game-4__img"></div>
                 <div class="game-info">
                     <h2 class="game-info__title">Викторина</h2>
@@ -186,7 +179,7 @@
                     <button onclick="startQuiz()" class="game-info__text">Играть!</button>
                 </div>
             </div>
-            <div class="game-5" id="Rock-paper-scissors">
+            <div class="game-5" id="Quiz">
                 <div class="game-5__img"></div>
                 <div class="game-info">
                     <h2 class="game-info__title">Камень, ножницы, бумага</h2>
@@ -219,6 +212,11 @@
     <div class="footer center">
         <p class="footer__text">Все права защищены.</p>
     </div>
+    <script src="random_tasks.js"></script>
+    <script src="guess_the_number.js"></script>
+    <script src="tur_the_text_over.js"></script>
+    <script src="quiz.js"></script>
+    <script src="rock_paper_scissors.js"></script>
     <script src="random_color.js" ></script>
 </body>
 </html>
