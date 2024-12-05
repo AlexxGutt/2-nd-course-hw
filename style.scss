@@ -143,6 +143,12 @@
     &__link {
         text-decoration: none;
     }
+    &__link-mob {
+        display: none;
+    }
+    &__buttton-mob {
+        display: none;
+    }
 
 }
 .about-game {
@@ -624,6 +630,7 @@ button {
       background-position: -3220px;
     }
 }
-
-
+@import 'setting';
+@import 'tablet';
+@import 'tablet_mini';
 @import 'mobile';
