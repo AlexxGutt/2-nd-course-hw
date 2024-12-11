@@ -1,20 +1,15 @@
-const randomNum = Math.floor(Math.random() * 100) + 1;
-console.log(randomNum);
-
-function guessTheNumber() {
-    
-    let num = Number(prompt(`Угадайте число от 1 до 100`));
-
-    if (num === randomNum) {
-        alert(`Поздравляю! Вы угадали!`);
-        } else if (isNaN(num) || num > 100 || num < 1) {
-            alert(`Введите число от 1 до 100!`);
-            return (guessTheNumber());
-        } else if (num > randomNum) {
-            alert(`Введите число меньше ${num}`);
-            return (guessTheNumber());
-        } else if (num < randomNum) {
-            alert(`Введите число больше ${num}`);
-            return (guessTheNumber());
-        }
-};
+let btn = document.getElementById('btn');
+let userNum;
+btn.addEventListener('click', function() {
+  let number = Math.floor(Math.random() * 100) + 1; 
+  userNum = Number(prompt("Угадайте число от 1 до 100")); 
+  while (userNum != number) { 
+    if (userNum < number) {
+      alert(`Это число больше ${userNum}!`);
+    } else {
+      alert(`Это число меньше ${userNum}!`);
+    }
+    userNum = Number(prompt('Попробуйте еще раз!'));
+  }
+  alert('Вы угадали число!');
+});

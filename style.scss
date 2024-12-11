@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -142,6 +145,12 @@
     }
     &__link {
         text-decoration: none;
+    }
+    &__link-mob {
+        display: none;
+    }
+    &__buttton-mob {
+        display: none;
     }
 
 }
@@ -578,7 +587,7 @@
 button {
     width: 247px;
     border-radius: 60px;
-    background: rgb(32, 32, 39);
+    background-color: rgb(32, 32, 39);
     border: 1px solid rgb(0, 0, 0);
     padding: 16px 28px 16px 28px;
     border: 0;
@@ -605,4 +614,26 @@ button {
         padding-top: 61px;
     }
 }
+.container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 90px;
+    background-image: url(img/marquee.png);
+    background-repeat: repeat-x;
+    animation: moveLeft 16s infinite linear;
+}
+
+@keyframes moveLeft {
+    from {
+      background-position: 0px;
+    }
+    to {
+      background-position: -3220px;
+    }
+}
+@import 'setting';
+@import 'tablet';
+@import 'tablet_mini';
 @import 'mobile';
